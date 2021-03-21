@@ -137,11 +137,11 @@ h5 {
 
 .nav {
     grid-area: na;
-    background: white;   
+    background: #302c74;
     opacity: 100%; 
     font-family: sans-serif;
     font-style: italic;
-    margin-top: 33px;
+
     margin-left: -10px;
     font-size: 30px;
     box-shadow: 0px 10px #302c74;
@@ -151,7 +151,7 @@ h5 {
 .navmenu1{
     margin-right: 6%;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     margin-left: 25px;
 }
@@ -159,7 +159,7 @@ h5 {
 .navmenurest{
     margin-right: 6%;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -171,8 +171,8 @@ h5 {
         grid-template-areas:         
             'na na na na na na'
             'h1 h1 h1 h1 h1 h1'
-            'a1 a1 a3 a3 a3 as'
-            'a2 a2 a3 a3 a3 as'
+            'a3 a3 a3 a1 a1 as'
+            'a3 a3 a3 a2 a2 as'
             'ft ft ft ft ft ft'
         ;
         grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
@@ -180,25 +180,36 @@ h5 {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen  and (max-width:1023px) {
     .gridWrapper {
         display: grid;
         width: 100vw;
-        height: 100vh;
+        height: 130%;
         grid-template-areas: 
+            'na na'
             'h1 h1'
-            'a1 a1'
+            'a3 a3'
             'a2 a2'
-            'a3 a3'
-            'a3 a3'
+            'a1 a1'
+            'a1 a1'
     }
     .nav {
-        display: none;
+        grid-area: na;
+        background: #302c74;   
+        color: whitesmoke;
+        font-style: italic;
+
+        box-shadow: 0px 10px #302c74;
+        text-align: center;
+        padding: 5%;
     }
     .aside {
         display: none;
     }
     .footer {
         display: none;
+    }
+    .article3{
+        margin-bottom: 5%;
     }
 }
